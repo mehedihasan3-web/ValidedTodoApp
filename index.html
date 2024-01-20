@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo App</h1>
+      <span class="addAndRemoveMassage"> </span>
+      <div class="valueSubmit">
+        <div class="todoTitle">
+          <input type="text" placeholder="Todo title" id="todoTitle" required />
+        </div>
+        <div class="todoDesc">
+          <input
+            type="text"
+            placeholder="Todo Description"
+            id="todoDesc"
+            required
+          />
+        </div>
+        <div class="addBtn">
+          <button id="addBtn">Add</button>
+        </div>
+      </div>
+
+      <div class="todoBody">
+        <ul class="todoBodyContent">
+          <!-- <li>
+            <p class="firstChild"><span class="TodoId">1.</span>Hello</p>
+            <p class="lastChild">Hello World</p>
+            <div class="buttons">
+              <button class="edit" id="editbtn">Edit</button>
+              <button class="dlt" id="dltbtn">Delete</button>
+            </div>
+          </li> -->
+        </ul>
+
+        <div class="showmessage"></div>
+        <div class="showmessage1">
+          <p>Pleased Enter A Title <span></span></p>
+        </div>
+        <div class="showmessage2">
+          <p>Pleased Enter A Description <span></span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="updateTodo">
+      <input type="hidden" value="" id="arrayIndex" />
+      <div>
+        <input
+          type="text"
+          value=""
+          id="edittitle"
+          placeholder="Enter a Title"
+        />
+      </div>
+      <div>
+        <textarea
+          name=""
+          cols="30"
+          rows="10"
+          id="editdescription"
+          placeholder="Enter a Description"
+        ></textarea>
+      </div>
+      <div class="updateButtons">
+        <button id="cancel">Cancel</button>
+        <button id="update">Update</button>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <script type="text/Javascript" src="script.js"></script>
+  </body>
+</html>

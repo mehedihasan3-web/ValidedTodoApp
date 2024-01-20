@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.valueSubmit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 1px 11px black;
+}
+
+.todoTitle {
+  width: 33%;
+}
+
+.todoDesc {
+  width: 55%;
+}
+
+input {
+  width: 100%;
+  padding: 20px;
+}
+
+.addBtn {
+  width: 10%;
+  position: relative;
+  right: 5px;
+}
+
+.addBtn button {
+  font-size: 18px;
+  padding: 20px 17px;
+  border: none;
+  outline: none;
+  background: #10cbff;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+.todoBody {
+  /* box-shadow: 3px 1px 11px black; */
+  margin-top: 27px;
+}
+
+ul li {
+  list-style: none;
+  position: relative;
+  padding: 20px;
+  padding-right: 80px;
+  box-shadow: 3px 1px 11px black;
+  margin-top: 20px;
+}
+
+.buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.buttons button {
+  padding: 13px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  display: block;
+  width: 100%;
+  margin: 3px;
+  user-select: none;
+}
+
+button.edit {
+  background: #7373ff;
+}
+
+button.dlt {
+  background: red;
+}
+p.firstChild {
+  font-size: 30px;
+}
+p.lastChild {
+  margin-top: 18px;
+}
+span.TodoId {
+  margin-right: 10px;
+}
+.success {
+  color: #19ce19;
+
+  position: absolute;
+  top: 20px;
+  border: 1px solid #19ce19;
+  padding: 2px 7px;
+}
+.danger {
+  color: #ce1919;
+
+  position: absolute;
+  top: 20px;
+  border: 1px solid #ce1919;
+  padding: 2px 7px;
+}
+.updateTodo {
+  width: 283px;
+  position: fixed;
+  top: 70px;
+  left: 11px;
+  display: none;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+}
+button#update {
+  background: #7373ff;
+  outline: none;
+  border: none;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+}
+button#cancel {
+  background: red;
+  outline: none;
+  border: none;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+}
+.updateButtons {
+  text-align: center;
+}
+.active {
+  outline: 2px solid red;
+}
+.showmessage1 {
+  position: absolute;
+  top: 0;
+  background: black;
+  color: #fff;
+  padding: 10px;
+  pointer-events: none;
+  top: 20px;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.showmessage2 {
+  position: absolute;
+  top: 0;
+  background: black;
+  color: #fff;
+  padding: 10px;
+  left: 210px;
+  pointer-events: none;
+  top: 20px;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.showmessage1 p {
+  position: relative;
+}
+.showmessage2 p {
+  position: relative;
+}
+.showmessage1 span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: black;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 20px;
+}
+.showmessage2 span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: black;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 20px;
+}
+.ShowpopMessage {
+  top: 0;
+  opacity: 1;
+}
+.updateButtons button {
+  user-select: none;
+}
+@media screen and (max-width: 500px) {
+  .container {
+    max-width: 360px;
+  }
+
+  button#addBtn {
+    padding: 19px;
+    position: relative;
+    right: 26px;
+  }
+
+  input#todoDesc {
+    width: 90%;
+  }
+  .updateTodo {
+    background: white;
+    position: fixed;
+    top: 150px;
+    left: 40px;
+    width: 80%;
+    border: 2px solid;
+  }
+  .success {
+    font-size: 10px;
+  }
+  .danger {
+    font-size: 10px;
+  }
+  .showmessage2 {
+    left: 158px;
+    font-size: 15px;
+  }
+
+  .showmessage1 {
+    font-size: 15px;
+  }
+}
